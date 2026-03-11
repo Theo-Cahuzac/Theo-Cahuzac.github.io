@@ -235,3 +235,57 @@ body {
     .section-header h2 { font-size: 2rem; }
     .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
 }
+
+/* --- Sommaire / Boutons d'ancrage --- */
+.summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0 40px;
+}
+
+.summary a {
+    display: inline-block;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+
+    color: var(--primary);
+    background: var(--white);
+
+    border: 2px solid var(--primary-light);
+    border-radius: 6px;
+
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+/* Hover */
+.summary a:hover {
+    background: var(--primary-light);
+    color: var(--white);
+    border-color: var(--primary-light);
+    transform: translateY(-2px);
+}
+
+/* Focus / actif */
+.summary a:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.15);
+}
+
+/* petite ligne orange décorative */
+.summary a::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
