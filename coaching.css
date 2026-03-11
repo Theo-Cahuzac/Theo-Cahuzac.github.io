@@ -1,0 +1,237 @@
+/* --- Variables de Design (Tout Bleu & Orange) --- */
+:root {
+    --primary: #2c5282;    /* Bleu profond */
+    --primary-light: #2563EB; /* Bleu vif */
+    --accent: #ed8936;     /* Orange */
+    --light-bg: #f7fafc;
+    --text-dark: #2d3748;
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0,0,0,0.1);
+    --transition: all 0.3s ease;
+}
+
+/* --- Reset & Base --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--light-bg);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* --- Header & Citation --- */
+.quote-section {
+    background: var(--primary);
+    color: var(--white);
+    padding: 10px 0;
+    text-align: center;
+    font-style: italic;
+}
+
+.quote-section blockquote p { font-size: 0.8rem; opacity: 0.9; }
+.quote-section cite { font-weight: bold; display: block; margin-top: 5px; color: var(--accent); }
+
+/* --- Hero Section --- */
+.hero {
+    background: var(--white);
+    padding: 40px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.branding h1 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.accent { color: var(--accent); font-size: 1.2em; }
+.subtitle { color: var(--primary-light); font-weight: 600; font-size: 1.1rem; margin-top: 5px; }
+
+.contact-info { text-align: right; }
+.contact-item {
+    display: block;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    margin-bottom: 5px;
+    transition: var(--transition);
+}
+.contact-item:hover { color: var(--accent); }
+
+/* --- Navigation --- */
+.main-nav {
+    background: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-link {
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--primary);
+    background: #f1f5f9;
+}
+
+#contact-btn {
+    background: var(--primary-light);
+    color: white;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    align-self: center;
+}
+
+/* --- Contenu de la Page --- */
+.page-section { padding: 60px 0; }
+
+.section-header {
+    margin-bottom: 40px;
+    border-left: 5px solid var(--accent);
+    padding-left: 20px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+.section-intro {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    max-width: 800px;
+}
+
+.content h3 {
+    color: var(--primary);
+    margin: 40px 0 20px 0;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #e2e8f0;
+    display: inline-block;
+    padding-right: 50px;
+}
+
+.content p { margin-bottom: 20px; }
+
+/* --- Listes (Ronds Bleus) --- */
+.content ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.content ul li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.content ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary); /* Rond Bleu */
+    border-radius: 50%;
+}
+
+/* --- Mise en avant (Highlight) --- */
+.highlight {
+    background: #ebf4ff;
+    border-left: 4px solid var(--primary-light);
+    padding: 20px;
+    margin: 30px 0;
+    font-style: italic;
+    color: var(--primary);
+    border-radius: 0 8px 8px 0;
+}
+
+/* --- Footer --- */
+.footer {
+    background: #1a202c;
+    color: var(--white);
+    padding: 60px 0 20px;
+    margin-top: 60px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-title { color: var(--white); margin-bottom: 20px; }
+.large-letter-footer { color: var(--accent); font-size: 1.4em; }
+
+.footer-section-title {
+    color: var(--secondary);
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.footer-contact-item a { color: white; text-decoration: none; }
+.icon-small { width: 18px; height: 18px; stroke: var(--secondary); }
+
+.footer-bottom {
+    border-top: 1px solid #2d3748;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .hero-content { flex-direction: column; text-align: center; }
+    .contact-info { text-align: center; }
+    .main-nav ul { flex-direction: column; align-items: center; }
+    .nav-link { padding: 10px; }
+    .section-header h2 { font-size: 2rem; }
+    .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
+}
