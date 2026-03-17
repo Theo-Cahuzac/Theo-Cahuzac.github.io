@@ -368,6 +368,57 @@ html {
     border-left: 4px solid var(--primary-light);
 }
 
+/* --- PAGE TÉMOIGNAGES --- */
+
+.testimony-section {
+    padding: 40px 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimony-section p {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    margin-bottom: 40px;
+    position: relative;
+    border-left: 5px solid var(--accent);
+    font-style: italic;
+    color: var(--text-dark);
+    line-height: 1.8;
+}
+
+.title-testimony {
+    font-size: 1.4rem;
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title-testimony::before {
+    content: "👤";
+    font-size: 1.2rem;
+}
+
+.testimony-section p:hover {
+    transform: translateY(-3px);
+    transition: var(--transition);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+    .testimony-section {
+        padding: 20px;
+    }
+    .title-testimony {
+        font-size: 1.2rem;
+    }
+}
 
 #backToTop {
     position: fixed;
