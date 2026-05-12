@@ -1,0 +1,167 @@
+/* === GLOBAL === */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #FFFFFF;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* === CONTAINER === */
+.project-detail {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+/* === TITRES === */
+.project-detail h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #38bdf8, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project-detail h2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #38bdf8;
+    border-left: 3px solid #38bdf8;
+    padding-left: 10px;
+}
+
+/* === TEXT === */
+.project-detail p {
+    color: #334155;
+}
+
+.project-detail strong {
+    color: #e2e8f0;
+}
+
+/* === LIST === */
+.project-detail ul {
+    padding-left: 20px;
+}
+
+.project-detail li {
+    margin-bottom: 8px;
+}
+
+/* === IMAGES (preuves) === */
+.project-detail img {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 12px;
+    border: 1px solid #1e293b;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-detail img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.2);
+}
+
+/* === CARD EFFECT === */
+
+
+/* === BACK BUTTON === */
+.project-detail a {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 16px;
+    background: #38bdf8;
+    color: #020617;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.project-detail a:hover {
+    background: #0ea5e9;
+}
+
+/* === TECH TAGS === */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tech-stack span {
+    background: rgba(56, 189, 248, 0.1);
+    color: #38bdf8;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .project-detail h1 {
+        font-size: 2rem;
+    }
+
+    .project-detail {
+        padding: 40px 15px;
+    }
+}
+
+/* === CAROUSEL CONTAINER === */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #000;
+    border: 1px solid #1e293b;
+}
+
+.carousel-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* === IMAGES DU CARROUSEL === */
+.carousel-track img,
+.carousel-track video {
+    min-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #0f172a;
+}
+
+/* === BOUTONS NAVIGATION === */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(56, 189, 248, 0.2);
+    color: #38bdf8;
+    border: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    z-index: 10;
+    backdrop-filter: blur(4px);
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background: #38bdf8;
+    color: #020617;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }

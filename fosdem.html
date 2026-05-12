@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>FOSDEM 2025</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script>
+        let currentSlide = 0;
+        function moveSlide(direction) {
+            const track = document.querySelector(".carousel-track");
+            const slides = track.children;
+            currentSlide += direction;
+            if (currentSlide < 0) currentSlide = slides.length - 1;
+            if (currentSlide >= slides.length) currentSlide = 0;
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+    </script>
+</head>
+<body>
+<section class="project-detail">
+    <h1>Visite du FOSDEM – Bruxelles</h1>
+
+    <div class="meta">
+        <span>🏷️ Thème : Conférence</span>
+        <span>⏱️ Heures : 8h</span>
+        <span>⏱️ Heures comptées : 6h</span>
+    </div>
+
+    <h2>Contexte</h2>
+    <p>
+        Le FOSDEM (Free and Open Source Software Developers' European Meeting) est l'une des plus grandes conférences européennes dédiées aux logiciels libres et open source. Elle se tient
+        chaque année début février sur le campus de l'ULB à Bruxelles et rassemble des milliers de développeurs, d'entreprises et de passionnés du monde entier.
+    </p>
+
+    <h2>Ce que j'ai découvert</h2>
+    <p>
+       La conférence m'a permis de découvrir un très grand nombre d'entreprise et projets que je ne connaissais pas (OpenFoodFacts et Chamilo par exemple) La conférence m'a exposé à un écosystème très large que je ne connaissais qu'en surface.
+        J'ai eu l'occasion d'assisté à des présentations sur l'histoire de l'informatique et les enjeux du logiciel libre aujourd'hui. En plus d'autres présentations intéréssante.
+    </p>
+
+    <h2>Analyse réflexive</h2>
+    <p>
+        Le FOSDEM m'a ouvert les yeux sur l'ampleur et la vitalité de la communauté open source.
+        Dans le domaine du réseau et des infrastructures, une grande partie des outils que j'utilise ou que j'utiliserai sont open source : Linux, pfSense, Wireshark, OpenVPN, Ansible…
+        Lors de cette convention j'ai pris goût au projet open source, tellement que mon TFE à comme but d'être totalement open source et transparant.
+
+    </p>
+    <p>
+        Cette visite m'a aussi rappelé l'importance de rester curieux et de se tenir informé des évolutions technologiques, même dans des domaines qui ne sont pas directement les miens.
+       Les barrières entre les différents domaines de l'informatiques deviennent de plus en plus flou, ce qui rend essentiel le fait de s'intéresser à d'autres domaines que le miens.
+    </p>
+
+    <h2>📸 Preuves</h2>
+    <div class="carousel">
+        <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="carousel-track">
+            <img src="photo/fosdem2.jpeg" alt="Devant une affiche FOSDEM">
+            <video src="photo/fosdem.mp4" muted loop onclick="this.play()"></video>
+        </div>
+        <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <a href="index.html" class="back-link">⬅ Retour</a>
+</section>
+</body>
+</html>

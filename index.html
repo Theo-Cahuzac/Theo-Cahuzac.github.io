@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Étudiant Réseau & Cybersécurité</title>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <nav class="header-content">
+    <a href="#me" class="logo">
+      <span>
+          <span class="logo-network">Théo</span><span class="logo-at">@</span><span class="logo-portfolio">portfolio</span>
+        </span>
+    </a>
+
+    <ul class="nav">
+      <li><button onclick="scrollToSection('about')" class="nav-link">// À propos</button></li>
+      <li><button onclick="scrollToSection('experience')" class="nav-link">// Parcours</button></li>
+      <li><button onclick="scrollToSection('portfolio')" class="nav-link">// Projets</button></li>
+      <li><a href="files/CV.pdf" download="CV_Theo_Cahuzac.pdf" class="nav-link" style="text-decoration: none;">// CV</a></li>
+      <li><button class="cta-btn" onclick="scrollToSection('contact')">Contact</button></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="me" class="me">
+  <div class="container"> <div class="terminal-title">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="4 17 10 11 4 5"></polyline>
+      <line x1="12" y1="19" x2="20" y2="19"></line>
+    </svg>
+    <span>admin@network:~$ whoami</span>
+  </div>
+
+    <h1 class="titre">
+      Bonjour, moi c'est <br>
+      <span class="gradient-text">Théo</span>
+    </h1>
+
+    <div class="me-description">
+      <p>Étudiant en technologies de l'informatique </p>
+      <p>
+        Motivé et toujours en quête d'apprendre je souhaite faire de l'informatique mon domaine de travail.
+      </p>
+    </div>
+
+    <div>
+      <button class="btn-primary" onclick="scrollToSection('portfolio')">
+        Voir mes projets
+      </button>
+      <a href="files/CV.pdf" download="CV_Theo_Cahuzac.pdf" class="btn-secondary">
+        Télécharger mon CV
+      </a>
+      <a href="mailto:cahuzactheo@outlook.com" class="btn-secondary">
+        Me contacter
+      </a>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number stat-blue">24/7</div>
+        <p>Serveur minecraft actif</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number stat-purple">15+</div>
+        <p>VMs déployées</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number stat-pink">Comptia security+</div>
+        <p>En préparation</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number stat-green">∞</div>
+        <p>Nalu par jour</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <p class="section-label">// Introduction</p>
+    <h2 class="section-title">Qui suis-je ?</h2>
+
+    <div class="about-grid">
+      <div>
+        <p>
+          Actuellement dans un bachelier de technologie de l'informatque à l'Ephec,
+          je me suis rapidement découvert un gout pour le réseau et les infrastructures IT.
+        </p>
+        <p>
+          Mon objectif ? Continuer à apprendre différentes compétence ...
+        </p>
+      </div>
+
+      <div>
+        <img src="photo/me.jpeg" alt="Photo de Théo" style="max-width: 100%; border-radius: 10px;" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <div class="container">
+    <p class="section-label">// Mon parcours</p>
+    <h2 class="section-title">Expérience & Formation</h2>
+
+    <div class="experience-grid">
+      <div class="timeline-column">
+        <h3>Expérience</h3>
+        <div class="timeline">
+          <article class="timeline-item">
+            <h4 class="timeline-title">Technicien Réseau Stagiaire</h4>
+            <p class="timeline-period">Février 2026 - mai 2026</p>
+            <p>Projets très divers, mise en place de commutateurs, firewall, cablage.</p>
+          </article>
+
+          <article class="timeline-item">
+            <h4 class="timeline-title">Vice président AIESEC Louvain-la-neuve</h4>
+            <p class="timeline-period">Fevrier 2023 - Fevrier 2024</p>
+            <p>Management d'équipe, stratégies de vente et marketing.</p>
+          </article>
+
+          <article class="timeline-item">
+            <h4 class="timeline-title">Job Étudiant</h4>
+            <p class="timeline-period">Sept 2023 - Décembre 2023</p>
+            <p>Service en salle, gestion du stress et situations d'urgence.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="timeline-column">
+        <h3>Formation</h3>
+        <div class="timeline">
+          <article class="timeline-item">
+            <h4 class="timeline-title">Bachelier en Informatique</h4>
+            <p class="timeline-period">2023- 2026 (en cours)</p>
+            <p>Réseau, administration système et électronique.</p>
+          </article>
+
+          <article class="timeline-item">
+            <h4 class="timeline-title">Bachelier en communication</h4>
+            <p class="timeline-period">2021 - 2023</p>
+            <p>UCLouvain - Réorientation après la Bac 2.</p>
+          </article>
+
+          <article class="timeline-item">
+            <h4 class="timeline-title">Seconde rétho</h4>
+            <p class="timeline-period">2020 - 2021</p>
+            <p>Oregon-city high school (USA) - Seconde rétho dans le but d'améliorer mon anglais.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">// Mon portfolio </p>
+    </div>
+    <div class="projects-grid" id="projects-grid">
+      <table class="activity-table">
+        <thead>
+        <tr>
+          <th>Thèmes</th>
+          <th><i class="icon"></i> Activité</th>
+          <th>Heures</th>
+          <th>Compétences</th>
+          <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Formation en ligne/Développement</td>
+          <td><a href="devmobile.html" class="activity-link">Développement mobile en kotlin</a></td>
+          <td>10h</td>
+          <td>12h</td>
+          <td>Développement en kotlin</td>
+        </tr>
+        <tr>
+          <td>Langues</td>
+          <td><a href="neerlandais.html" class="activity-link">Neerlandais</a></td>
+          <td>10h</td>
+          <td>~50h</td>
+          <td>Apprentissage du néérlandais</td>
+        </tr>
+        <tr>
+          <td>Divers</td>
+          <td><a href="aiesec.html" class="activity-link">AIESEC - Vice-président</a></td>
+          <td>10h</td>
+          <td>~500h</td>
+          <td>Management, marketing</td>
+        </tr>
+        <tr>
+          <td>sécurité/réseau/divers</td>
+          <td><a href="cyberchallenge.html" class="activity-link">Cyber security challenge</a></td>
+          <td>10h</td>
+          <td>~30h</td>
+          <td>Challenge cybersécurité en ligne</td>
+        </tr>
+        <tr>
+          <td>Conférence</td>
+          <td><a href="fosdem.html" class="activity-link">Fosdem</a></td>
+          <td>6h</td>
+          <td>8h</td>
+          <td>Conférence sur le développement logiciel</td>
+        </tr>
+        <tr>
+          <td>Technologies des ordinateurs</td>
+          <td><a href="pc.html" class="activity-link">Montage d'ordinateurs de jeu</a></td>
+          <td>10h</td>
+          <td>~20h</td>
+          <td>Montage de plusieurs ordinateurs de jeu, avec conseils sur le choix des composants.</td>
+        </tr>
+        <tr>
+          <td>Réseaux</td>
+          <td><a href="voip.html" class="activity-link">Formation pour système avaya voip</a></td>
+          <td>3h</td>
+          <td>3h</td>
+          <td>Découverte du logiciel, des protocoles et fonctionnalitées pour téléphone ip avaya</td>
+        </tr>
+        <tr>
+          <td>introduction à la cybersécurité</td>
+          <td><a href="cyber.html" class="activity-link">Formation à la cybersécurité</a></td>
+          <td>6h</td>
+          <td>6h</td>
+          <td>Découverte des bonnes pratiques et conventions</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td></td>
+          <td>65h</td>
+          <td>629h</td>
+          <td></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="contact" class="contact section">
+  <div class="container">
+    <p class="section-label">// Envie de discuter ?</p>
+    <h2 class="section-title">On reste en contact</h2>
+
+    <div class="contact-card">
+      <a href="mailto:cahuzactheo@outlook.com" class="contact-email">cahuzactheo@outlook.com</a>
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/théo-cahuzac-7a2287259" class="social-link">
+          <div class="social-icon">
+            <img src="photo/linkedin.jpg" alt="LinkedIn" style="max-width: 40px">
+          </div>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/theo-cahuzac" class="social-link">
+          <div class="social-icon">
+            <img src="photo/github.png" alt="GitHub" style="max-width: 40px">
+          </div>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p class="footer-terminal">
+    <span class="prompt">$</span> cat /home/network-engineer/signature.txt
+  </p>
+  <p>© 2026 Théo Cahuzac</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
